@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LazosTech DAO Governance</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ETHERS -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>LazosTech DAO</h1>
+    <p class="subtitle">On-chain Governance • Diamond Standard • Base Sepolia</p>
+
+    <!-- 🔗 CONNECT WALLET (CENTRO) -->
+    <div class="center">
+      <button id="connectWallet" class="btn-primary">
+        🔗 Connect Wallet
+      </button>
+      <p id="walletAddress" class="wallet"></p>
+    </div>
+
+    <!-- 🧱 GRID PRINCIPAL -->
+    <div class="dao-grid">
+
+      <!-- IZQUIERDA -->
+      <div class="dao-left card">
+        <h2>Open Governance</h2>
+        <input id="sessionName" placeholder="Session name" />
+        <button id="openSession" class="btn-secondary">
+          Open Session
+        </button>
+
+        <input id="resolutionText" placeholder="Resolution description" />
+        <button id="createResolution" class="btn-secondary">
+          Create Resolution
+        </button>
+      </div>
+
+      <!-- DERECHA -->
+      <div class="dao-right card">
+        <h2>Vote</h2>
+        <input id="resolutionId" placeholder="Resolution ID" />
+
+        <div class="vote-buttons">
+          <button class="vote-yes" onclick="vote(true)">YES</button>
+          <button class="vote-no" onclick="vote(false)">NO</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 📊 RESULTADOS -->
+    <div class="results card">
+      <h2>Voting Results</h2>
+      <div class="result-bar yes">
+        YES: <span id="yesVotes">0</span>
+      </div>
+      <div class="result-bar no">
+        NO: <span id="noVotes">0</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Fondo -->
+  <svg class="bg-waves" viewBox="0 0 1440 320">
+    <path fill="rgba(255,255,255,0.04)"
+      d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,203,864,181.3C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L0,320Z">
+    </path>
+  </svg>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+
+<body>
+
+  <div class="container">
+
+    <h1>LazosTech DAO</h1>
+    <p class="subtitle">On-chain Governance • Diamond Standard • Base Sepolia</p>
+
+    <!-- 🔗 CONNECT WALLET (CENTRO) -->
+    <div class="center">
+      <button id="connectWallet" class="btn-primary">
+        🔗 Connect Wallet
+      </button>
+      <p id="walletAddress" class="wallet"></p>
+    </div>
+
+    <!-- 🧱 GRID PRINCIPAL -->
+    <div class="dao-grid">
+
+      <!-- IZQUIERDA -->
+      <div class="dao-left card">
+        <h2>Open Governance</h2>
+        <input id="sessionName" placeholder="Session name" />
+        <button id="openSession" class="btn-secondary">
+          Open Session
+        </button>
+
+        <input id="resolutionText" placeholder="Resolution description" />
+        <button id="createResolution" class="btn-secondary">
+          Create Resolution
+        </button>
+      </div>
+
+      <!-- DERECHA -->
+      <div class="dao-right card">
+        <h2>Vote</h2>
+        <input id="resolutionId" placeholder="Resolution ID" />
+
+        <div class="vote-buttons">
+          <button class="vote-yes" onclick="vote(true)">YES</button>
+          <button class="vote-no" onclick="vote(false)">NO</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 📊 RESULTADOS -->
+    <div class="results card">
+      <h2>Voting Results</h2>
+      <div class="result-bar yes">
+        YES: <span id="yesVotes">0</span>
+      </div>
+      <div class="result-bar no">
+        NO: <span id="noVotes">0</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Fondo -->
+  <svg class="bg-waves" viewBox="0 0 1440 320">
+    <path fill="rgba(255,255,255,0.04)"
+      d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,203,864,181.3C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L0,320Z">
+    </path>
+  </svg>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+  <!-- 🌊 BACKGROUND WAVES -->
+<svg class="bg-waves" viewBox="0 0 1440 320">
+  <path fill="rgba(255,255,255,0.04)"
+    d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,203,864,181.3C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L0,320Z">
+  </path>
+</svg>
+
+</body>
+</html>
